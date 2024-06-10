@@ -548,7 +548,6 @@ h6 {
   text-align: center;
   position: relative;
   padding-bottom: 40px;
-  min-height: 850px;
   /* vertical-align: middle; */
   overflow: hidden;
 }
@@ -746,6 +745,9 @@ h6 {
   padding: 20px;
   border-radius: 10px;
 }
+.ourTeam .card-industry.indus-back {
+  background-color: rgb(193, 193, 242);
+}
 .ourTeam .card-industry .card-first {
   display: flex;
   flex-direction: row;
@@ -777,16 +779,19 @@ h6 {
   object-position: center top;
 }
 .ourTeam .card-industry .team-desc {
-  color: #64748b;
+  color: #4a525c;
   font-size: 14px;
 }
 
 .ourTeam-unique {
-  font-size: 22px;
-  color: var(--c-primaryColor);
+  font-size: 16px;
   font-weight: 300;
   font-family: var(--font-menu);
   font-style: italic;
+}
+
+.unique-k {
+  color: var(--c-primaryColor);
 }
 
 .tailImgCover {
@@ -1392,6 +1397,43 @@ h6 {
   border-radius: 10px;
   max-width: 725px;
   padding: 20px;
+}
+
+@media (max-width: 745px) {
+  .hero h2 {
+    font-size: 25px;
+  }
+  .hero p {
+    font-size: 18px !important;
+  }
+}
+.back-cover-mob {
+  display: none;
+}
+
+@media (max-width: 715px) {
+  .back-cover {
+    display: none;
+  }
+  .back-cover-mob {
+    display: block;
+    --webkit-backdrop-filter: blur(1px);
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+}
+@media (max-width: 570px) and (min-width: 320px) {
+  .mob-place-size {
+    margin-top: 85px;
+  }
+  .back-cover-mob h2 {
+    font-size: 18px;
+  }
+  .back-cover-mob p {
+    font-size: 14px !important;
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
